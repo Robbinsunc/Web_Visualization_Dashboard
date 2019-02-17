@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Visualization Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+             
+    <body>
+         
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="LandingPage.html">Latitude</a>
+                </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                    <ul class="nav navbar-nav navbar-right">
+                      
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Temperature.html">Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Wind_speed.html">Wind Speed</a></li>
+                                
+                        </ul>
+                            
+                        <li><a href="Comparison.html">Comparison</a></li>
+                        <li><a href="Data.html">Data</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+        </nav>
+                
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <section class="summary">
+                        <h1>Summary: Latitude vs. Weather</h1>
+                        <hr/>
+                        <img id="LatvTemp" src="Images/LatvTemp.png" alt="Latitude vs Temperature"/>
+                        <p class="text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+                        we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities across the globe.
+                        </p>
+                        <p class="text">After assembling the dataset, we used Matplotlib, to plot various aspects of the weather vs. latitude. 
+                            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data
+                            and visualizations created as part of the analysis, as well as explanation and descriptions of any trends and correlations witnessed.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-lg-5">
+                    <section class="visuals">
+                        <h3>Visualizations</h3>
+                        <hr class="hr"/>
+                        <div class="div_visuals">
+                             <a href="Temperature.html"><img class="img" src="Images/LatvTemp.png" alt="Latitude vs temperature"/></a>
+                             <a href="Humidity.html"><img class="img" src="Images/LatvHumid.png" alt="Latitude vs Humidity"/></a>
+                             <a href="Cloudiness.html"><img class="img" src="Images/LatvCloud.png" alt="Latitude vs Cloudiness"></a>
+                             <a href="Wind_speed.html"><img class="img" src="Images/LatvWind.png" alt="Latitude vs Wind Speed"></a>
+                        </div>
+                        
+                    </section>
+
+                </div>
+            </div>
+        </div>      
+                
+        <div class="footer navbar">
+        
+                <div class="footer-top"></div>
+
+                <div class="container">
+                    
+                    <p class="footer-text">®Copyright 2018</p>
+                </div>
+        </div>
+            
+        
+  
+        
+    <!-- jQuery and Bootstrap (necessary for Bootstrap's JavaScript plugins)-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
