@@ -7,23 +7,27 @@ body{background-color:#f1efef
     border-color: #E7E7E7;
 }
 /* Title */
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand{
     color: white;
     background-color: darkcyan;
     font-size: 28px;
 }
-.container{margin-left: 50px;
-    margin-right: 25px;
-    width: 1500px}
+.container-fluid{
+    margin-left: 75px;
+    margin-right: 30px;
+}
+.container{
+    width: 1500px
+}
 
 .summary{background-color: white;
     height: 600px;
+    width: 800px;
 }
 
 .visuals{background-color: white;
     text-align: center;
     width: 650px;
-    padding-bottom: 50px;
 }
 
 h1{color: darkcyan;
@@ -41,21 +45,26 @@ h3{color: darkcyan;
     font-size: 30px;
     font-weight: bold;
     text-align: initial;
+    margin-left: 30px;
 }
 
 h4{color: darkcyan;
     font-size: 35px;
     font-weight: bold;
     padding-left: 75px;
+    background-color: white;
 }
 
 .text{text-align:left;
     font-size: 20px;
     background-color: white;
-}
+    width: 770px;
+    margin-left: 25px;
+    }
 
 #LatvTemp{float: left;
-    width: 600px;
+    width: 400px;
+    height: 230px;
     margin-right: 20px;
     margin-bottom: 20px
 }
@@ -71,6 +80,7 @@ h4{color: darkcyan;
 }
 
 #compare{font-size: 20px;
+    background-color: white;
 }
 
 .img-responsive{width: 650px;
@@ -84,9 +94,6 @@ h4{color: darkcyan;
 .footer-text{font-size: 18px;
     text-align: center;
     font-weight: bold;
-    margin: 25px;
+    color: white;
+    background-color:darkcyan;
     }
-
-.row{margin-right: 300px;
-    margin-left: 100px;
-}
